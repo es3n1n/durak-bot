@@ -1,5 +1,7 @@
 # Durak Bot
 
+[![Lint and Test](https://github.com/es3n1n/durak-bot/actions/workflows/lint_test.yml/badge.svg)](https://github.com/es3n1n/durak-bot/actions/workflows/lint_test.yml)
+
 *Durak is a shedding-type card game that is popular in post-Soviet states. The objective of the game is to get rid of all one's cards. At the end of the game, the last player with cards in their hand is the durak ("fool"). For more detailed information, visit the [Wikipedia page on Durak](https://en.wikipedia.org/wiki/Durak).*
 
 There are many online resources where you can play this card game; however, the most popular one is Durak Online, available for [Android](https://play.google.com/store/apps/details?id=com.rstgames.durak&hl=en_US) and [iOS](https://apps.apple.com/us/app/durak-online-card-game/id891825663). This bot is an automated script that plays in lobbies in this version of the game.
