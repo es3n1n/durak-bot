@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "durak_bot"
+version = "0.1.0"
+description = ""
+authors = ["Arsenii es3n1n <me@es3n.in>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.2"
+durakonline = { path = "durakonline/", develop = true }
+pydantic-settings = "^2.5.2"
+pysocks = "^1.7.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.8"
+mypy = "^1.11.2"
+pytest = "^8.3.3"
+types-requests = "^2.32.0.20240914"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+flake8-quotes.inline-quotes = "single"
+
+[tool.ruff.format]
+quote-style = "single"
+line-ending = "lf"
+
+[[tool.mypy.overrides]]
+module = "socks.*"
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

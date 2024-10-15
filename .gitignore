@@ -1,0 +1,8 @@
+**/__pycache__/**
+*.pyc
+**/.mypy_cache/**
+**/.pytest_cache/**
+**/.ruff_cache/**
+**/.idea/**
+db.db
+.env
